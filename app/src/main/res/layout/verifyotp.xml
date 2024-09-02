@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".VerifyotpActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Welcome let's dive into your account"
+        android:textSize="18sp"
+        android:textColor="#878787"
+
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OTP as sent to the mobile number ending with"
+        android:textSize="16sp"
+        android:textColor="#878787"
+
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Enter OTP"
+        android:inputType="textEmailAddress|phone"
+        android:textColorHint="#949494"
+        android:padding="12dp"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/button2"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="or"
+        android:textSize="20sp"
+        android:textColor="#949494"
+
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Continue with Google"
+        android:background="@drawable/rounded_corner"
+        android:textColor="#949494"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:background="@drawable/rounded_corner"
+        android:textColor="#949494"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

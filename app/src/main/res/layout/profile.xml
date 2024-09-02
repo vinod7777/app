@@ -1,0 +1,272 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/main"
+    tools:context=".ProfileActivity">
+
+    <!-- Top Toolbar -->
+    <RelativeLayout
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/img" />
+
+        <!-- Menu Icon -->
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_menu_24" />
+
+    </RelativeLayout>
+
+    <!-- User Info Section -->
+    <RelativeLayout
+
+        android:id="@+id/userInfoSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbar"
+        android:layout_marginTop="10dp"
+        android:background="#F5F5F5"
+        android:padding="10dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_account"
+            />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginStart="10dp"
+            android:text="Guest"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginStart="10dp"
+            android:text="Reader"
+            android:textColor="#9E9E9E" />
+
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:text="Back"
+            android:textColor="#0073FF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_navigate_next_24"
+
+            android:layout_marginTop="5dp"
+            />
+        />
+
+    </RelativeLayout>
+
+    <!-- Options Section -->
+    <LinearLayout
+        android:id="@+id/optionsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInfoSection"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Language Option -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/languageIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_language_24" />
+
+            <TextView
+                android:id="@+id/languageOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/languageIcon"
+                android:layout_marginStart="10dp"
+                android:text="Choose your language"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/languageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="17dp"
+                android:layout_marginTop="5dp"
+                android:text="English"
+                android:textColor="#0073FF" />
+
+        </RelativeLayout>
+
+        <!-- Location Option -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/locationOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/locationIcon"
+                android:layout_marginStart="10dp"
+                android:text="Choose your location"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/locationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:text="Srikakulam"
+                android:textColor="#0073FF" />
+
+        </RelativeLayout>
+
+        <!-- Notifications Option -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/notificationsIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_notifications_none_24" />
+
+            <TextView
+                android:id="@+id/notificationsOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/notificationsIcon"
+                android:layout_marginStart="10dp"
+                android:text="Notifications"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/notificationsSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:checked="true"
+
+                android:thumbTint="#000000"
+                android:trackTint="#60A29B9B" />
+
+        </RelativeLayout>
+
+        <!-- Video Autoplay Option -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/videoAutoplayIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/outline_video_library_24" />
+
+            <TextView
+                android:id="@+id/videoAutoplayOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/videoAutoplayIcon"
+                android:layout_marginStart="10dp"
+                android:text="Video Autoplay"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/videoAutoplaySwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:thumbTint="#000000"
+                android:trackTint="#A6A5A5" />
+
+        </RelativeLayout>
+
+        <!-- Night Mode Option -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/nightModeIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:rotation="-51"
+                android:src="@drawable/outline_nightlight_24" />
+
+            <TextView
+                android:id="@+id/nightModeOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nightModeIcon"
+                android:layout_marginStart="10dp"
+                android:text="Night Mode"
+
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/nightModeSwitch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:thumbTint="#000000"
+                android:trackTint="#949494"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
