@@ -28,6 +28,7 @@
 
 
     <EditText
+        android:id="@+id/phone"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -39,13 +40,13 @@
         />
 
     <Button
+        android:id="@+id/otpSend"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="Send OTP"
         android:textColor="@color/white"
         android:textSize="17sp"
-
         android:background="@drawable/button2"
 
         />
